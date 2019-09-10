@@ -67,7 +67,7 @@
 <meta property="og:site_name" content="NeverSayNever">
 <meta property="og:description" content="快速排序是C.R.A.Hoare于1962年提出的一种划分交换排序。 它采用了一种分治的策略，通常称其为分治法(Divide-and-ConquerMethod)，即 D&amp;amp;C 快速排序是对冒泡排序的改进，采用挖坑填数和分治法来解决。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-03T07:03:58.585Z">
+<meta property="og:updated_time" content="2019-09-10T09:41:39.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序">
 <meta name="twitter:description" content="快速排序是C.R.A.Hoare于1962年提出的一种划分交换排序。 它采用了一种分治的策略，通常称其为分治法(Divide-and-ConquerMethod)，即 D&amp;amp;C 快速排序是对冒泡排序的改进，采用挖坑填数和分治法来解决。">
@@ -253,11 +253,21 @@
                 
               
 
-              <time title="创建时间：2019-09-03 14:00:46 / 修改时间：15:03:58" itemprop="dateCreated datePublished" datetime="2019-09-03T14:00:46+08:00">2019-09-03</time>
+              <time title="创建时间：2019-09-03 14:00:46" itemprop="dateCreated datePublished" datetime="2019-09-03T14:00:46+08:00">2019-09-03</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-10 17:41:39" itemprop="dateModified" datetime="2019-09-10T17:41:39+08:00">2019-09-10</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -323,7 +333,7 @@
 <p>对挖坑填数进行总结:</p>
 <p>1．i = L; j = R; 将基准数挖出形成第一个坑 s[i]。<br>2．j– 由后向前找比它小的数，找到后挖出此数填前一个坑 s[i] 中。<br>3．i++ 由前向后找比它大的数，找到后也挖出此数填到前一个坑 s[j]中。<br>4．再重复执行2，3二步，直到 i==j，将基准数填入 s[i]中。</p>
 <p>性能分析：</p>
-<p>最快： 每次划分所选择的中间数恰好将当前序列几乎等分，经过log2n趟划分，便可得到长度为1的子表。这样，整个算法的时间复杂度为 <code>O(nlog2n)</code><br>最慢： 每次所选的中间数是当前序列中的最大或最小元素，这使得每次划分所得的子表中一个为空表，另一子表的长度为原表的长度-1。这样，长度为n的数据表的快速排序需要经过 n 趟划分，使得整个排序算法的时间复杂度为 <code>O(n2)</code></p>
+<p>最快： 每次划分所选择的中间数恰好将当前序列几乎等分，经过log2n趟划分，便可得到长度为1的子表。这样，整个算法的时间复杂度为 <code>O(nlog2n)</code><br>最慢： 每次所选的中间数是当前序列中的最大或最小元素，这使得每次划分所得的子表中一个为空表，另一子表的长度为原表的长度-1。这样，长度为n的数据表的快速排序需要经过 n 趟划分，使得整个排序算法的时间复杂度为 <code>O(n^2)</code></p>
 <p>平均时间复杂度是 <code>O(nlog2n)</code>。</p>
 <p>因此，该排序方法被认为是目前最好的一种内部排序方法</p>
 <p>代码实现</p>
@@ -354,6 +364,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+              <a href="/2019/09/10/常见排序/" rel="prev" title="常见排序">
+                常见排序 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
     </footer>
@@ -402,7 +416,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
